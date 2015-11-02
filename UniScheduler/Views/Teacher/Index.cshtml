@@ -1,0 +1,24 @@
+﻿@model System.Collections.Generic.IEnumerable<UniScheduler.Models.TeacherModel>
+@{
+  ViewBag.Title = "Teachers";  
+}
+
+<h2>Teachers</h2>
+
+<table>
+  @foreach (var teacher in Model)
+  { 
+    <tr>
+      <td>
+        @teacher.Id
+      </td>
+      <td>
+        @string.Format("{0} {1} {2}", teacher.FirstName, teacher.MiddleName, teacher.LastName);
+      </td>
+      <td>
+        @teacher.Phone
+      </td>
+    </tr>
+  }
+</table>
+

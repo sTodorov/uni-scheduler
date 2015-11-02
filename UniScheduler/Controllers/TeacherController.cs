@@ -7,15 +7,15 @@ using UniScheduler.Data;
 
 namespace UniScheduler.Controllers
 {
-  public class CourseController : Controller
+  public class TeacherController : Controller
   {
     public ActionResult Index()
     {
-      var dataRepository = new CourseRepository();
+      var dataRepository = new TeacherRepository();
+      var model = dataRepository.GetTeachers();
 
-      var courses = dataRepository.GetCourses();
-
-      return View(courses);
+      return View(model);
     }
+
   }
 }

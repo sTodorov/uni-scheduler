@@ -9,22 +9,22 @@ using Dapper;
 
 namespace UniScheduler.Data
 {
-  public class CourseRepository
+  public class TeacherRepository
   {
     private string _connectionString;
 
-    public CourseRepository()
+    public TeacherRepository()
     {
       _connectionString = ConfigurationManager.ConnectionStrings["UniScheduler"].ConnectionString;
     }
 
-    public IEnumerable<CourseModel> GetCourses()
+    public IEnumerable<TeacherModel> GetTeachers()
     {
       using (var connection = new SqlConnection(_connectionString))
       {
         connection.Open();
 
-        return connection.Query<CourseModel>("select * from Course").ToList();
+        return connection.Query<TeacherModel>("select * from Teacher").ToList();
       }
     }
   }

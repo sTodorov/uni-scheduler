@@ -77,3 +77,6 @@ C:\Projects\UniScheduler\UniScheduler\bin\zh-Hant\System.Spatial.resources.dll
 C:\Projects\UniScheduler\UniScheduler\obj\Debug\UniScheduler.csprojResolveAssemblyReference.cache
 C:\Projects\UniScheduler\UniScheduler\obj\Debug\UniScheduler.dll
 C:\Projects\UniScheduler\UniScheduler\obj\Debug\UniScheduler.pdb
+C:\Projects\UniScheduler\UniScheduler\bin\Dapper.dll
+C:\Projects\UniScheduler\UniScheduler\bin\Dapper.pdb
+C:\Projects\UniScheduler\UniScheduler\bin\Dapper.xml
